@@ -6,7 +6,7 @@ $config = array(
   'db_passwd' => 'root'
 );
 
-class DB {
+class SpcDB {
 
   private $_db;
 

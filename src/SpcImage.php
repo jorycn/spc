@@ -1,17 +1,4 @@
-<?php
-
-/**
- * This file is part of the Nette Framework (https://nette.org)
- * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
- */
-
-declare(strict_types=1);
-
-namespace Nette\Utils;
-
-use Nette;
-
-
+<?php declare(strict_types=1);
 /**
  * Basic manipulation with images.
  *
@@ -87,9 +74,8 @@ use Nette;
  * @property-read int $height
  * @property-read resource $imageResource
  */
-class Image
+class SpcImage
 {
-	use Nette\SmartObject;
 
 	/** {@link resize()} only shrinks images */
 	public const SHRINK_ONLY = 0b0001;
