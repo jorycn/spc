@@ -20,6 +20,7 @@ $pattern     =  isset( $_GET['pattern'] ) ? $_GET['pattern']  : '';
 
 $Redis = new Redis();
 $Redis->connect($config[$server]['host'], $config[$server]['port'], 5);
+$Redis->auth('Mgcmredis1314..');
 
 try {
     $Redis->ping();
@@ -253,8 +254,8 @@ class Html {
 <head>
     <title>Adminer for Redis</title>
 </head>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 <body>
 
 <div class="container">
